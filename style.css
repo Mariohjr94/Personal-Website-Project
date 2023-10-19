@@ -4,31 +4,37 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #474747;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: #474747; */
 }
 
 li,
 a,
 button {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: #ecf0f1;
   text-decoration: none;
+  background-color: #242524;
 }
 
 header {
   display: flex;
-  justify-content: flex-end;
+  height: 5rem;
+  /* justify-content: flex-end; */
   align-items: center;
   padding: 30px 10%;
-  background-color: #242524;
+  background: #232423;
   position: sticky;
+  box-shadow: 0 2px 3px #232423;
+  top: 0; /* tIf the element is in position absolute, the element will position itself from the top of the first positioned ancestor. */
+  z-index: 9;
 }
 
 .logo {
   cursor: pointer;
   margin-right: auto;
+  color: #ecf0f1;
 }
 
 .nav-links {
@@ -58,4 +64,53 @@ button {
 
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
+}
+
+.hero {
+  min-height: calc(100vh - 5rem);
+  background: rgb(218, 218, 218);
+  position: relative;
+}
+
+.hero-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  color: #454545;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.hero-center h1 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+.hero-center p {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.hero-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  animation: slideFromBottom 5s ease-in-out 1;
+}
+
+.hero-text {
+  animation: slideFromTop 5s ease-in-out 1;
+}
+
+.temp {
+  min-height: 100vh;
+  background: red;
 }
