@@ -69,7 +69,8 @@ button:hover {
 
 .hero {
   min-height: calc(100vh - 5rem);
-  background: rgb(218, 218, 218);
+  background: linear-gradient(rgba(217, 217, 217, 0.2), rgb(176, 175, 175)),
+    url("./images/wood.jpg") center/cover;
   position: relative;
 }
 
