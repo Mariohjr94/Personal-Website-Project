@@ -22,7 +22,7 @@ body {
 /* nav bar */
 
 .container {
-  max-width: 1000px;
+  max-width: 90%;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
   margin-left: auto;
@@ -208,6 +208,47 @@ body {
   margin: 0 auto;
   margin-bottom: 1.5rem;
 }
+
+/* about hero css */
+.hero-about-left {
+  min-height: 100vh;
+  background: linear-gradient(rgba(217, 217, 217, 0.2), rgb(176, 175, 175)),
+    url("./images/wood.jpg") center/cover;
+  position: relative;
+}
+
+.hero-about-center {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  color: #ececec;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid red; */
+  text-align: left;
+}
+
+.hero-about-center h1 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+.hero-about-center p {
+  max-width: 35em;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.mario-pic {
+  width: 300px;
+}
+
+/* --- */
 
 .temp {
   min-height: 100vh;
