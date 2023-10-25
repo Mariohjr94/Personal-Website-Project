@@ -180,6 +180,9 @@ body {
 
 .hero,
 .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: linear-gradient(rgba(217, 217, 217, 0.2), rgb(176, 175, 175)),
     url("./images/wood.jpg") center/cover;
@@ -194,9 +197,8 @@ body {
   padding: 5rem 0;
   color: #ececec;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -263,7 +265,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5%;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
