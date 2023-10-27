@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header id="navbar">
+      <nav class="navbar-container container">
+        <a href="/" class="home-link">
+          <i class="fa-solid fa-utensils fa-2xl logo"></i>
+        </a>
+        <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="./index.html">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="./about.html">About</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- form -->
+    <div class="contact">
+      <form action="/action_page.php">
+        <label for="name">Name</label>
+        <input
+          class="text"
+          type="text"
+          id="name"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <label for="email">Email</label>
+        <input
+          class="text"
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email.."
+        />
+        <label for="comments">Coments</label>
+        <textarea
+          class="text comments"
+          type="text"
+          id="commets"
+          name="comments"
+          placeholder="Coments.."
+        >
+        </textarea>
+
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
