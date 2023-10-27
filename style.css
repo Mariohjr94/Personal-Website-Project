@@ -279,6 +279,7 @@ hr {
 .contact {
   background-color: #232423;
   height: 100vh;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +291,9 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+  gap: 2rem;
 }
 
 .portfolio-text {
@@ -300,7 +304,18 @@ hr {
   margin-left: 1rem;
 }
 
-.portfolio-pic {
+.portfolio-text > h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-text > h3,
+p {
+  opacity: 0.5;
+}
+
+.portfolio-pic > {
+  flex: 1;
   max-width: 100%;
   max-height: auto;
 }
@@ -374,7 +389,7 @@ hr {
 .contact {
   background-color: #b0afaf;
   flex-direction: column;
-  margin: 2rem;
+  margin: 0, 2rem;
 }
 
 .contact > h2 {
@@ -419,7 +434,7 @@ hr {
   background-color: #45a049;
 }
 
-/* media queries for nac */
+/* media queries desktop */
 @media screen and (min-width: 700px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {
@@ -447,7 +462,7 @@ hr {
   }
 }
 
-/* media queries for hero */
+/* media queries for small screens */
 
 @media screen and (max-width: 700px) {
   .hobbie-container {
@@ -463,4 +478,12 @@ hr {
   }
 }
 
-/* media queries for portfolio */
+@media screen and (max-width: 767px) {
+  .portfolio-image {
+    display: none;
+  }
+
+  .portfolio-text {
+    text-align: center;
+  }
+}
