@@ -14,3 +14,12 @@ navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
+
+// button
+const buttonAction = document.getElementsByClassName("submit");
+const clicked = () => {
+  alert("Hola amigo");
+  console.log("hola amigo, now you diggin' too deep ;)");
+};
+
+buttonAction.addEventListener("summit", clicked());
