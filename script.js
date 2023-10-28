@@ -16,10 +16,24 @@ navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
 // button
-const buttonAction = document.getElementsByClassName("submit");
-const clicked = () => {
-  alert("Hola amigo");
-  console.log("hola amigo, now you diggin' too deep ;)");
-};
+// document.addEventListener("DOMContentLoaded", function () {
+//   const buttonAction = document.getElementsByClassName("submit")[0];
 
-buttonAction.addEventListener("summit", clicked());
+//   const clicked = () => {
+//     console.log("hola amigo, now you diggin' too deep ;)");
+//     alert("Hola amigo");
+//   };
+
+//   buttonAction.addEventListener("click", clicked);
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttonAction = document.getElementsByClassName("submit")[0];
+
+  const clicked = () => {
+    console.log("hola amigo, now you diggin' too deep ;)");
+    alert("Hola amigo");
+  };
+
+  buttonAction.addEventListener("click", clicked);
+});
