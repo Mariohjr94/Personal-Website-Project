@@ -421,10 +421,13 @@ p {
 }
 
 /* contact css */
+#contactForm {
+  margin: 0 2rem;
+}
+
 .contact {
   background-color: #b0afaf;
   flex-direction: column;
-  margin: 0, 2rem;
 }
 
 .contact > h2 {
@@ -513,7 +516,7 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .portfolio-image {
     display: none;
   }
