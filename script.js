@@ -15,18 +15,6 @@ navbarToggle.addEventListener("click", toggleNavbarVisibility);
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
-// button
-// document.addEventListener("DOMContentLoaded", function () {
-//   const buttonAction = document.getElementsByClassName("submit")[0];
-
-//   const clicked = () => {
-//     console.log("hola amigo, now you diggin' too deep ;)");
-//     alert("Hola amigo");
-//   };
-
-//   buttonAction.addEventListener("click", clicked);
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   const buttonAction = document.getElementsByClassName("submit")[0];
 
