@@ -12,6 +12,8 @@ this page will include the following:
 
 ## Technologies
 
+HTML
+CSS 
 JAVASCRIPT
 
 ## Authors
